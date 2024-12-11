@@ -10,7 +10,6 @@
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
   <a href="#model-providers"><strong>Model Providers</strong></a> ·
-  <a href="#deploy-your-own"><strong>Deploy Your Own</strong></a> ·
   <a href="#running-locally"><strong>Running locally</strong></a>
 </p>
 <br/>
@@ -43,13 +42,16 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 > Caution: Don't expose your secret keys with .env
 
 1. Clone the repo
-2. Run a docker image of Postgres locally or get one from Neon - We are intrested in the URL for DB Connection (put it in .env.example). Modify the .env file with updated POSTGRES_URL
+2. Run a docker image of Postgres locally or get one from Neon - We are intrested in the URL for DB Connection (put it in .env.example). Modify the .env file with updated POSTGRES_URL - should look something like this if Postgres is running locally -
+
+```POSTGRES_URL="postgresql://postgres:<your_password>@localhost:5432/postgres(Default DB Name)"
+``` 
 3. Run Migrate Command to set up the DB
 
 ```bash
 pnpm install
 pnpm dev
-pnpm drizzle-kit migrate
+pnpm drizzle-kit migrate #migration command
 ```
 
 Your ai-chat-bot should now be running on [localhost:3000](http://localhost:3000/).

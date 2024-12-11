@@ -44,8 +44,7 @@ You will need to use the environment variables [defined in `.env.example`](.env.
 1. Clone the repo
 2. Run a docker image of Postgres locally or get one from Neon - We are intrested in the URL for DB Connection (put it in .env.example). Modify the .env file with updated POSTGRES_URL - should look something like this if Postgres is running locally -
 
-```POSTGRES_URL="postgresql://postgres:<your_password>@localhost:5432/postgres(Default DB Name)
-``` 
+```POSTGRES_URL=postgresql://postgres:<your_password>@localhost:5432/postgres(Default DB Name)``` 
 3. Run Migrate Command to set up the DB
 
 ```bash

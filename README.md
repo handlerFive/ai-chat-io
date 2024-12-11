@@ -1,5 +1,5 @@
 <a>
-  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/custom-app.png">
+  <img alt="Next.js 14 and App Router-ready AI chatbot." src="app/(chat)/template-image.png">
   <h1 align="center">Next.js Local AI Chatbot - OpenAI gpt-4o (Default)</h1>
 </a>
 
